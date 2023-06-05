@@ -1,0 +1,95 @@
+/*----- CONTENTS 
+
+    1. DEFAULTS
+        1.1 BOX STYLING
+        1.2 BUTTON STYLING
+        1.3 BORDERS
+        1.4 BOOTSTRAP OVERRIDES
+
+-----*/
+
+/*----- 1. DEFAULTS -----*/
+
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+:root {
+    --main-background-color:#3B2E1E;
+    --background-color-light:#D4BF88;
+    --background-color-dark:#3A4928;
+    --main-font-color:#3B2E1E;
+    --font-color-light:#E6DEB9;
+    --font-color-dark:#3A4928;
+    --main-button-color:#3B2E1E;
+    --main-button-font-color:#E6DE89;
+    --main-hover:#fff;
+    --main-border:2px solid #3B2E1E;
+}
+body {
+    margin:0;
+    padding:0;
+    background:#000;
+    overflow-x:hidden;
+    background:url(../img/stone-bricks-3.webp);
+    background-size:contain;
+}
+
+a {
+    color:var(--main-anchor-font-color);
+}
+
+/*----- 1.1 BOX STYLING 
+These classes should be applied after bootstrap classes -----*/
+
+.main-box {
+    background:var(--main-background-color);
+    color:var(--font-color-light);
+
+}
+.light-box {
+    background:var(--background-color-light);
+    color:var(--font-color-dark);
+}
+.dark-box {
+    background:var(--background-color-dark);
+    color:var(--font-color-light);
+}
+
+.main-box h1, .main-box h2, .light-box h1, .light-box h2, .dark-box h1, .dark-box h2 {
+    font-family:serif;
+    text-transform:uppercase;
+    letter-spacing:0.1rem;
+}
+
+.main-box p, .light-box p, .dark-box p {
+    font-family:calibri;
+    font-size:1.1rem;
+}
+
+/*----- 1.2 BUTTON STYLING -----*/
+.button-main {
+    background:var(--main-button-color);
+    color:var(--main-button-font-color);
+}
+/*----- 1.3 BORDERS -----*/
+.border-main {
+    border:var(--main-border);
+}
+.border-top-main {
+    border-top:var(--main-border);
+}
+.border-bottom-main {
+    border-bottom:var(--main-border);
+}
+/*----- 1.4 BOOTSTRAP OVERRIDES -----*/
+.navbar {
+    margin-bottom:50px;
+}
+.nav-link {
+    color:var(--font-color-light);
+    font-family:serif;
+}
+.nav-link:hover {
+    color:var(--main-hover);
+}
