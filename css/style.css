@@ -55,13 +55,13 @@ These classes should be applied after bootstrap classes -----*/
     color:var(--font-color-light);
 }
 
-.main-box h1, .main-box h2, .light-box h1, .light-box h2, .dark-box h1, .dark-box h2 {
+.main-box h1, .main-box h2, .light-box h1, .light-box h2, .dark-box h1, .dark-box h2, .col h3 {
     font-family:serif;
     text-transform:uppercase;
     letter-spacing:0.1rem;
 }
 
-.main-box p, .light-box p, .dark-box p {
+.main-box p, .light-box p, .dark-box p, label, input[type="text"], button {
     font-family:calibri;
     font-size:1.1rem;
 }
@@ -96,14 +96,17 @@ These classes should be applied after bootstrap classes -----*/
 /*----- CUSTOM -----*/
 
 .height-control {
-    height:80vh;
+    height:70vh;
 }
 .margin-control {
     height:20vh;
 }
 @media only screen and (max-width:768px) {
     .height-control {
-        height:auto;
+        height:35vh;
+    }
+    .margin-control {
+        height:0vh;
     }
 }
 .wrap {
