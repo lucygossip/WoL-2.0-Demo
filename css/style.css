@@ -30,7 +30,6 @@ body {
     margin:0;
     padding:0;
     background:#000;
-    overflow-x:hidden;
     background:url(../img/stone-bricks-3.webp);
     background-size:auto;
 }
@@ -96,6 +95,15 @@ These classes should be applied after bootstrap classes -----*/
 
 /*----- CUSTOM -----*/
 
-.vh-50 {
-    height:50vh;
+.height-control {
+    height:100vh;
+}
+
+@media only screen and (max-width:768px) {
+    .height-control {
+        height:auto;
+    }
+}
+.wrap {
+    min-height:100vh;
 }
