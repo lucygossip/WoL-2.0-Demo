@@ -1,22 +1,25 @@
-#WoL 2.0
+# WoL 2.0
 
-##General Styling Properties
+## General Styling Properties
 
-Fonts: (gg sans?), calibri, serif
-Main font: Serif
-Chat font: Calibri
+Fonts: calibri, serif
 
-##Login Page
+**Main font:** Serif
 
-##Landing page (after login)
+**Chat font:** Calibri
 
-##Rules & Guidelines
+## Login Page
 
-##Forum Page
+## Landing page (after login)
+
+## Rules & Guidelines
+
+## Forum Page
 
 Before login: Read only
+
 After login: Read and post
 
-##Chat
+## Chat
 
-##Character Profile Page
+## Character Profile Page
