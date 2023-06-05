@@ -32,7 +32,7 @@ body {
     background:#000;
     overflow-x:hidden;
     background:url(../img/stone-bricks-3.webp);
-    background-size:contain;
+    background-size:auto;
 }
 
 a {
@@ -92,4 +92,10 @@ These classes should be applied after bootstrap classes -----*/
 }
 .nav-link:hover {
     color:var(--main-hover);
+}
+
+/*----- CUSTOM -----*/
+
+.vh-50 {
+    height:50vh;
 }
