@@ -15,12 +15,12 @@
 }
 
 :root {
-    --main-background-color:#3B2E1E;
-    --background-color-light:#D4BF88;
-    --background-color-dark:#3A4928;
+    --main-background-color:#222;
+    --background-color-light:#ccc;
+    --background-color-dark:#222;
     --main-font-color:#3B2E1E;
-    --font-color-light:#E6DEB9;
-    --font-color-dark:#3A4928;
+    --font-color-light:#ccc;
+    --font-color-dark:#222;
     --main-button-color:#3B2E1E;
     --main-button-font-color:#E6DE89;
     --main-hover:#fff;
@@ -30,7 +30,7 @@ body {
     margin:0;
     padding:0;
     background:#000;
-    background:url(../img/stone-bricks-3.webp);
+    background:url(../img/Mossy_Bricks.webp);
     background-size:auto;
 }
 
