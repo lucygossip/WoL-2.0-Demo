@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css"> <!-- BOOTSTRAP 5.3 MIN-->
+        <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap 5-->
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!-- Cinzel Font -->
     <link href="pattern-library.css" rel="stylesheet"> <!-- Pattern library CSS-->
@@ -16,9 +18,11 @@
     </nav>
 
     
-    <div class="container-fluid">
-        <div class="row border border-dark main-box p-2">
-            <div class="col-md-2 border-end border-dark main-box p-3">
+    <div class="container">
+
+        <!-- Typography -->      
+        <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
+            <div class="col-xl-2 border-end border-dark main-box p-3">
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
                 <h3>Header 3</h3>
@@ -28,7 +32,7 @@
                 <p>Paragraph</p>
                 <a href="#">Link</a>
             </div>
-            <div class="col-md-2 border-end border-dark light-box p-3">
+            <div class="col-xl-2 border-end border-dark light-box p-3">
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
                 <h3>Header 3</h3>
@@ -38,7 +42,7 @@
                 <p>Paragraph</p>
                 <a href="#">Link</a>
             </div>
-            <div class="col-md-2 border-end border-dark dark-box p-3">
+            <div class="col-xl-2 border-end border-dark dark-box p-3">
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
                 <h3>Header 3</h3>
@@ -48,20 +52,76 @@
                 <p>Paragraph</p>
                 <a href="#">Link</a>
             </div>
-            <div class="col-md-6 main-box p-3">
+            <div class="col-xl-6 main-box p-3">
                 <h1>Typography</h1>
                 <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
                 <p>The font colours are styled according to different box styles - main, light and dark.</p>
             </div>
         </div>
+             
+        <!-- Buttons -->
+        
+        <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
+            <div class="col-xl-2 border-end border-dark main-box p-3">
+                <button class="btn light-box">Button - Light Box</button>
+                <input class="btn light-box" type="button" value="Button Input - Light Box">
+            </div>
+            <div class="col-xl-2 border-end border-dark light-box p-3">
+                    
+                    <button class="btn dark-box">Button - Dark Box</button>
+                   
+                    <input class="btn dark-box" type="button" value="Button Input - Dark Box">
+                </div>
+            <div class="col-xl-2 border-end border-dark dark-box p-3">
+                 <button class="btn main-box">Button - Main Box</button>
+                 <input class="btn main-box" type="button" value="Button Input - Main Box">
+            </div>
+                <div class="col-xl-6 main-box p-3">
+                    <h1>Buttons</h1>
+                    <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
+                </div>
+        </div>
+        
+        <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2">
+                <div class="col-xl-3 border-end border-dark main-box p-3">
+                    <div class="card light-box main-box-border">
+                        <img class="card-image-top" src="../img/Solar-Fire-Cup-Flame-Balze-Lawn-Wall-Decoration-Lantern-Lamp-Light-ISO9001.png" />
+                        <h6 class="card-header">Card Header</h6>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 border-end border-dark main-box p-3">
+                    <div class="card dark-box main-box-border">
+                        <img class="card-image-top" src="../img/Solar-Fire-Cup-Flame-Balze-Lawn-Wall-Decoration-Lantern-Lamp-Light-ISO9001.png" />
+                        <h6 class="card-header">Card Header</h6>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 main-box p-3">
+                    <h1>Cards</h1>
+                    <p>Description Here</p>
+                </div>
+            </div>
+             
+    </div>
         
     <!-- Template
 
-            <div class="row border border-dark main-box p-2">
-                <div clas="col-md-4 border-end border-dark light-box p-3">
+            <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2">
+                <div class="col-xl-2 border-end border-dark main-box p-3">
                     THING HERE
                 </div>
-                <div clas="col-md-8 dark-box p-3">
+                <div class="col-xl-2 border-end border-dark light-box p-3">
+                    THING HERE
+                </div>
+                <div class="col-xl-2 border-end border-dark dark-box p-3">
+                    THING HERE
+                </div>
+                <div class="col-xl-6 main-box p-3">
                     <h1>Title Here</h1>
                     <p>Description Here</p>
                 </div>

@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration:none;
     color:var(--font-color-light);
+    cursor:pointer;
 }
 a:hover {
     text-decoration:underline;
@@ -52,8 +53,24 @@ a:hover {
     background:var(--background-color-dark);
     background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
     background-size:contain;
-    color:var(--fon-color-light);
+    color:var(--font-color-light);
 }
 .dark-box a {
     color:var(--font-color-light);
+}
+
+/*----- BUTTONS -----*/
+
+button, input[type="button"] {
+    margin:10px;
+}
+.main-box button:hover, .dark-box button:hover, input[type="button"].main-box:hover, input[type="button"].dark-box:hover {
+    margin:10px;
+    background:#aaa;
+    color:var(--font-color-dark);
+}
+
+button.light-box:hover, input[type="button"].light-box:hover {
+    color:var(--font-color-light);
+    background:#444;
 }
