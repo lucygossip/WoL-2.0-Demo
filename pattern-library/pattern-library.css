@@ -1,0 +1,59 @@
+/*----- ROOT VARIABLES -----*/
+:root {
+    --main-background-color:#222;
+    --background-color-light:#ccc;
+    --background-color-dark:#3a3a3f;
+    --main-font-color:#3B2E1E;
+    --font-color-light:#ccc;
+    --font-color-dark:#222;
+    --main-button-color:#3B2E1E;
+    --main-button-font-color:#E6DE89;
+    --main-hover-font-color:#fff;
+    --main-hover-background-color:#000;
+    --main-border:2px solid #3B2E1E;
+}
+
+/*----- DEFAULT TYPOGRAPHY -----*/
+body {
+    font-family:calibri !important;
+    background:#222;
+    background-image:url(../img/Mossy_Bricks.webp);
+    color:#eee;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:Cinzel;
+}
+
+a {
+    text-decoration:none;
+    color:var(--font-color-light);
+}
+a:hover {
+    text-decoration:underline;
+    color:#666;
+}
+
+/*----- BOX STYLES -----*/
+
+.main-box {
+    background:var(--main-background-color);
+    color:var(--font-color-light);
+}
+.light-box {
+    background:var(--background-color-light);
+    background-image:url(../img/360_F_426561532_8pXZZAbxSvm3FQ6WwNZxfCFqujFEgt3e.jpeg);
+    background-size:contain;
+    color:var(--font-color-dark);
+}
+.light-box a {
+    color:var(--font-color-dark);
+}
+.dark-box {
+    background:var(--background-color-dark);
+    background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
+    background-size:contain;
+    color:var(--fon-color-light);
+}
+.dark-box a {
+    color:var(--font-color-light);
+}
