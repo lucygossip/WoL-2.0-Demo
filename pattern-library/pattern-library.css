@@ -61,10 +61,10 @@ a:hover {
 
 /*----- BUTTONS -----*/
 
-button, input[type="button"] {
+button, input[type="button"], a.btn {
     margin:10px;
 }
-.main-box button:hover, .dark-box button:hover, input[type="button"].main-box:hover, input[type="button"].dark-box:hover {
+.main-box button:hover, .dark-box button:hover, input[type="button"].main-box:hover, input[type="button"].dark-box:hover, a.nav-link.btn:hover {
     margin:10px;
     background:#aaa;
     color:var(--font-color-dark);
@@ -73,4 +73,8 @@ button, input[type="button"] {
 button.light-box:hover, input[type="button"].light-box:hover {
     color:var(--font-color-light);
     background:#444;
+}
+button.main-box:focus, input[type="button"].main-box:focus, button.dark-box:focus, input[type="button"].dark-box:focus, a.nav-link.btn:focus {
+    outline:transparent;
+    color:#fff;
 }

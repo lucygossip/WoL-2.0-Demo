@@ -3,24 +3,45 @@
     <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css"> <!-- BOOTSTRAP 5.3 MIN-->
         <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap 5-->
+    
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!-- Cinzel Font -->
     <link href="pattern-library.css" rel="stylesheet"> <!-- Pattern library CSS-->
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg main-box mb-5">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link">Link</a></li>
-            <li class="nav-item"><a class="nav-link">Link</a></li>
-            <li class="nav-item"><a class="nav-link">Link</a></li>
-            <li class="nav-item"><a class="nav-link">Link</a></li>
+        <ul class="navbar-nav w-100">
+            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#typography" role="button" aria-expanded="false" aria-controls="typography">Typography</a></li>
+            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#buttons" role="button" aria-expanded="false" aria-controls="buttons">Buttons</a></li>
+            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#cards" role="button" aria-expanded="false" aria-controls="cards">Cards</a></li>
+            <li class="nav-item"><a class="nav-link btn main-box" href="">Link</a></li>
         </ul>
     </nav>
 
     
     <div class="container">
+        
+        <!-- Introduction -->
+        
+        <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
+            <div class="col-lg-3 d-none d-lg-block"></div>
+            <div class="col-lg-6">
+                <h1 class="text-center">Pattern Library</h1>
+                <p>This is the pattern library for <b>Project Valenheim.</b> Here, you will find the preset styles for the project.</p>
+                <p>This project uses:</p>
+                <ul>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Bootstrap 5.3</li>
+                </ul>
+                <p>Please click on the links in the navbar to browse the library.</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block"></div>
+        </div>
 
-        <!-- Typography -->      
+        <!-- Typography -->
+        
+        <div class="collapse" id="typography">
         <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
             <div class="col-xl-2 border-end border-dark main-box p-3">
                 <h1>Header 1</h1>
@@ -52,15 +73,17 @@
                 <p>Paragraph</p>
                 <a href="#">Link</a>
             </div>
-            <div class="col-xl-6 main-box p-3">
+            <div class="tab col-xl-6 main-box p-3">
                 <h1>Typography</h1>
                 <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
                 <p>The font colours are styled according to different box styles - main, light and dark.</p>
             </div>
         </div>
+            </div>
              
         <!-- Buttons -->
         
+        <div class="collapse" id="buttons">
         <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
             <div class="col-xl-2 border-end border-dark main-box p-3">
                 <button class="btn light-box">Button - Light Box</button>
@@ -81,7 +104,11 @@
                     <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
                 </div>
         </div>
+            </div>
         
+        <!-- Cards -->
+        
+        <div class="collapse" id="cards">
         <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2">
                 <div class="col-xl-3 border-end border-dark main-box p-3">
                     <div class="card light-box main-box-border">
@@ -105,6 +132,7 @@
                     <h1>Cards</h1>
                     <p>Description Here</p>
                 </div>
+            </div>
             </div>
              
     </div>
@@ -141,9 +169,8 @@
         Table
 -->
         
-    </div>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap 5 JS bundle -->
-
+    <script src="../js/script.js"></script>
 </body>
