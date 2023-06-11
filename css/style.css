@@ -53,22 +53,23 @@ input.main-box:hover {
 }
 .light-box {
     background:var(--background-color-light);
+    background-image:url(../img/360_F_426561532_8pXZZAbxSvm3FQ6WwNZxfCFqujFEgt3e.jpeg);
+    background-size:contain;
     color:var(--font-color-dark);
 }
 .dark-box {
     background:var(--background-color-dark);
+    background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
+    background-size:contain;
     color:var(--font-color-light);
-}
-
-.main-box h1, .main-box h2, .light-box h1, .light-box h2, .dark-box h1, .dark-box h2, .col h3 {
-    font-family:serif;
-    text-transform:uppercase;
-    letter-spacing:0.1rem;
 }
 
 .main-box p, .light-box p, .dark-box p, label, input[type="text"], button {
     font-family:calibri;
     font-size:1.1rem;
+}
+.main-box-border {
+    border:var(--main-border);
 }
 
 /*----- 1.2 BUTTON STYLING -----*/
@@ -108,6 +109,14 @@ input.main-box:hover {
 }
 ul.dropdown-menu {
     border-top: 1px solid #000;
+}
+h2, h3, h4, h5, h6 {
+    font-family:Cinzel;
+    letter-spacing:0.1em;
+    margin-bottom:0;
+}
+h6 {
+    font-weight:bold;
 }
 
 /*----- CUSTOM -----*/
