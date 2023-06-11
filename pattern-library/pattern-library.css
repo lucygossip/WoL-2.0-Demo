@@ -33,6 +33,9 @@ a:hover {
     text-decoration:underline;
     color:var(--font-color-light);
 }
+.nav-link {
+    text-align:left;
+}
 
 /*----- BOX STYLES -----*/
 
@@ -62,10 +65,10 @@ a:hover {
 /*----- BUTTONS -----*/
 
 button, input[type="button"], a.btn {
-    margin:10px;
+/*    margin:10px; */
 }
 .main-box button:hover, .dark-box button:hover, input[type="button"].main-box:hover, input[type="button"].dark-box:hover, a.nav-link.btn:hover {
-    margin:10px;
+/*    margin:10px; */
     background:#aaa;
     color:var(--font-color-dark);
 }
