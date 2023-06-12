@@ -30,7 +30,6 @@ a {
     cursor:pointer;
 }
 a:hover {
-    text-decoration:underline;
     color:var(--font-color-light);
 }
 .nav-link {
@@ -42,6 +41,7 @@ a:hover {
 .main-box {
     background:var(--main-background-color);
     color:var(--font-color-light);
+    transition:0.3s ease;
 }
 .light-box {
     background:var(--background-color-light);
@@ -69,8 +69,7 @@ button, input[type="button"], a.btn {
 }
 .main-box button:hover, .dark-box button:hover, input[type="button"].main-box:hover, input[type="button"].dark-box:hover, a.nav-link:hover {
 /*    margin:10px; */
-    background:#aaa;
-    color:var(--font-color-dark);
+    color:#fff;
 }
 
 button.light-box:hover, input[type="button"].light-box:hover {
