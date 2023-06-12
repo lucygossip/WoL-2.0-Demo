@@ -9,37 +9,30 @@
 </head>
 <body>
     
-  <!--  <nav class="navbar navbar-expand-lg main-box mb-5">
-        <ul class="navbar-nav w-100">
-            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#typography" role="button" aria-expanded="false" aria-controls="typography">Typography</a></li>
-            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#buttons" role="button" aria-expanded="false" aria-controls="buttons">Buttons</a></li>
-            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#cards" role="button" aria-expanded="false" aria-controls="cards">Cards</a></li>
-            <li class="nav-item"><a class="nav-link btn main-box" href="">Link</a></li>
-        </ul>
-    </nav> -->
+    <div class="container-fluid">
     
-    <div class="container-fluid vh-100">
-        <div class="row h-100">    
-            <div class="col-auto main-box">
-                            
-                <!-- Navbar -->
-                <nav class="navbar">
-                    <ul class="navbar-nav d-flex flex-column">
-                        <h5>Pattern Library</h5>
-                        <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#typography" role="button" aria-expanded="false" aria-controls="typography">Typography</a></li>
-            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#buttons" role="button" aria-expanded="false" aria-controls="buttons">Buttons</a></li>
-            <li class="nav-item"><a class="nav-link btn main-box" data-bs-toggle="collapse" href="#cards" role="button" aria-expanded="false" aria-controls="cards">Cards</a></li>
-                    </ul>
-                </nav>
-            
-            </div>
-            <div class="col-sm p-5 min-vh-100">
+        
+        <div class="row">
+            <div class="col-md-auto main-box mb-3 mb-md-0 pt-3">
+                <button class="btn main-box d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar"><h5>Pattern Library</h5></button>
+                <h5 class="d-none d-md-block">Pattern Library</h5>
+                <div class="collapse dont-collapse-sm" id="sidebar">
+                     <navbar class="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link main-box" href="#about" onclick="openTab('about')">About</a></li>
+                            <li class="nav-item"><a class="nav-link main-box" href="#typography" onclick="openTab('typography')">Typography</a></li>
+                            <li class="nav-item"><a class="nav-link main-box" href="#buttons" onclick="openTab('buttons')">Buttons</a></li>
+                            <li class="nav-item"><a class="nav-link main-box" href="#cards" onclick="openTab('cards')">Cards</a></li>
+                        </ul>
+                </navbar>
                 
-                 <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
-            <div class="col-lg-3 d-none d-lg-block"></div>
-            <div class="col-lg-6">
-                <h1 class="text-center">Pattern Library</h1>
-                <p>This is the pattern library for <b>Project Valenheim.</b> Here, you will find the preset styles for the project.</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="main-box p-3 tab" id="about">
+                    <h1 class="text-center">Pattern Library</h1>
+                    <p>This is the pattern library for <b>Project Valenheim.</b> Here, you will find the preset styles for the project.</p>
                 <p>This project uses:</p>
                 <ul>
                     <li>HTML5</li>
@@ -47,149 +40,95 @@
                     <li>Bootstrap 5.3</li>
                 </ul>
                 <p>Please click on the links in the navbar to browse the library.</p>
-            </div>
-                     
-            <div class="col-lg-3 d-none d-lg-block"></div>
-        </div>
-
-        <!-- Typography -->
-        
-        <div class="collapse" id="typography">
-            <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2 mb-5">
-                <div class="col-xl-2 border-end border-dark main-box p-3">
-                    <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Paragraph</p>
-                    <a href="#">Link</a>
-            </div>
-                <div class="col-xl-2 border-end border-dark light-box p-3">
-                    <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Paragraph</p>
-                    <a href="#">Link</a>
-            </div>
-                <div class="col-xl-2 border-end border-dark dark-box p-3">
-                    <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Paragraph</p>
-                    <a href="#">Link</a>
-            </div>
-            <div class="tab col-xl-6 main-box p-3">
-                <h1>Typography</h1>
-                <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
-                <p>The font colours are styled according to different box styles - main, light and dark.</p>
-            </div>
-        </div>
-        </div>
-             
-        <!-- Buttons -->
-        
-        <div class="collapse" id="buttons">
-            <div class="row d-flex flex-column-reverse flex-xl-row main-box p-2 mb-5">
-                <div class="col-xl-2 main-box p-3">
-                    <button class="btn light-box">Button - Light Box</button>
-                    <input class="btn light-box" type="button" value="Button Input - Light Box">
                 </div>
-                <div class="col-xl-2 light-box p-3">
-
-                        <button class="btn dark-box">Button - Dark Box</button>
+                <div class="main-box p-3 tab" id="typography" style="display:none">
+                    <h1 class="text-center">Typography</h1>
+                    <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
+                <p>The font colours are styled according to different box styles - main, light and dark.</p>
+                    <div class="row">
+                        <div class="col-xl-4 p-3 main-box">
+                            <h1>Header 1</h1>
+                    <h2>Header 2</h2>
+                    <h3>Header 3</h3>
+                    <h4>Header 4</h4>
+                    <h5>Header 5</h5>
+                    <h6>Header 6</h6>
+                    <p>Paragraph</p>
+                    <a href="#">Link</a>
+                        </div>
+                        <div class="col-xl-4 p-3 light-box">
+                            <h1>Header 1</h1>
+                    <h2>Header 2</h2>
+                    <h3>Header 3</h3>
+                    <h4>Header 4</h4>
+                    <h5>Header 5</h5>
+                    <h6>Header 6</h6>
+                    <p>Paragraph</p>
+                    <a href="#">Link</a>
+                        </div>
+                        <div class="col-xl-4 p-3 dark-box">
+                            <h1>Header 1</h1>
+                    <h2>Header 2</h2>
+                    <h3>Header 3</h3>
+                    <h4>Header 4</h4>
+                    <h5>Header 5</h5>
+                    <h6>Header 6</h6>
+                    <p>Paragraph</p>
+                    <a href="#">Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-box p-3 tab" id="buttons" style="display:none">
+                    <h1 class="text-center">Buttons</h1>
+                    <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
+                    <div class="row">
+                        <div class="col-xl-4 p-3 main-box">
+                            <button class="btn light-box">Button - Light Box</button>
+                    <input class="btn light-box" type="button" value="Button Input - Light Box">
+                        </div>
+                        <div class="col-xl-4 p-3 light-box">
+                            <button class="btn dark-box">Button - Dark Box</button>
 
                         <input class="btn dark-box" type="button" value="Button Input - Dark Box">
-                    </div>
-                <div class="col-xl-2 dark-box p-3">
-                     <button class="btn main-box">Button - Main Box</button>
+                        </div>
+                        <div class="col-xl-4 p-3 dark-box">
+                            <button class="btn main-box">Button - Main Box</button>
                      <input class="btn main-box" type="button" value="Button Input - Main Box">
-                </div>
-                    <div class="col-xl-6 main-box p-3">
-                        <h1>Buttons</h1>
-                        <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
+                        </div>
                     </div>
-            </div>
-            </div>
-        
-        <!-- Cards -->
-        
-        <div class="collapse" id="cards">
-        
-            
-              <div class="row d-flex flex-column-reverse flex-md-row main-box mb-5">
-                <div class="col-md-2 col-xl-4 col-xl-4 main-box d-none d-md-block"></div>
-                <div class="col-md-4 col-xl-2 main-box p-3">
-                    <div class="card light-box main-box-border">
-                            <img class="card-image-top" src="../img/Solar-Fire-Cup-Flame-Balze-Lawn-Wall-Decoration-Lantern-Lamp-Light-ISO9001.png" />
-                            <h6 class="card-header">Card Header</h6>
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
-                            </div>
-                        </div>           
                 </div>
-                <div class="col-md-4 col-xl-2 main-box p-3">
-                     <div class="card dark-box main-box-border">
-                            <img class="card-image-top" src="../img/Solar-Fire-Cup-Flame-Balze-Lawn-Wall-Decoration-Lantern-Lamp-Light-ISO9001.png" />
+                <div class="main-box p-3 tab" id="cards" style="display:none">
+                    <h1 class="text-center">Cards</h1>
+                    <div class="row">
+                        <div class="col-xl-3 main-box d-none d-xl-block"></div>
+                        <div class="col-6 col-xl-3 main-box">
+                            <div class="card light-box main-box-border">
+                            <img class="card-image-top" src="../img/small-torch.jpg" />
                             <h6 class="card-header">Card Header</h6>
                             <div class="card-body">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
                             </div>
                         </div>
-                
+                        
+                        </div>
+                        <div class="col-6 col-xl-3 main-box">
+                            <div class="card dark-box main-box-border">
+                            <img class="card-image-top" src="../img/small-torch.jpg" />
+                            <h6 class="card-header">Card Header</h6>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 main-box d-none d-xl-block"></div>
+                    </div>
                 </div>
-        
-                <div class="col-md-2 col-xl-4 main-box d-none d-md-block"></div>
             </div>
-                     
             
-            </div>
         </div>
     </div>
-        
-    <!-- Template
-
-        <div class="collapse" id="">
-            <div class="row d-flex flex-column-reverse flex-xl-row border border-dark main-box p-2">
-                <div class="col-xl-2 border-end border-dark main-box p-3">
-                    THING HERE
-                </div>
-                <div class="col-xl-2 border-end border-dark light-box p-3">
-                    THING HERE
-                </div>
-                <div class="col-xl-2 border-end border-dark dark-box p-3">
-                    THING HERE
-                </div>
-                <div class="col-xl-6 main-box p-3">
-                    <h1>Title Here</h1>
-                    <p>Description Here</p>
-                </div>
-            </div>
-        </div>
--->    
-        
-        
-    <!--To be created:
-
-        Buttons
-        Card
-        Carousel
-        Dropdown
-        Footer
-        Modal
-        Navbar
-        Table
--->
-        
     
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap 5 JS bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap 5 JS bundle -->
     <script src="../js/script.js"></script>
 </body>
