@@ -1,25 +1,5 @@
-# WoL 2.0
+# Project Valenheim
 
-## General Styling Properties
+## About
 
-Fonts: calibri, serif
-
-**Main font:** Serif
-
-**Chat font:** Calibri
-
-## Login Page
-
-## Landing page (after login)
-
-## Rules & Guidelines
-
-## Forum Page
-
-Before login: Read only
-
-After login: Read and post
-
-## Chat
-
-## Character Profile Page
+We are creating a new text-based RPG website with a Medieval Fantasy setting. This server is split into two main roles - developers and creators. Creators are tasked with drawing up concepts for site features. Developers are tasked with coding said features. There is also an illustrator role for those interested in working on site illustrations. Working together, we aim to create a site with a high quality user interface, that is easy to navigate, and filled with great content for the users to enjoy.
