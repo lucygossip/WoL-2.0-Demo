@@ -3,7 +3,7 @@
     --main-background-color:#222;
     --background-color-light:#ccc;
     --background-color-dark:#3a3a3f;
-    --main-font-color:#3B2E1E;
+    --main-font-color:#aaa8a5;
     --font-color-light:#ccc;
     --font-color-dark:#222;
     --main-button-color:#3B2E1E;
@@ -40,7 +40,7 @@ a:hover {
 
 .main-box {
     background:var(--main-background-color);
-    color:var(--font-color-light);
+    color:var(--main-font-color);
     transition:0.3s ease;
 }
 .light-box {

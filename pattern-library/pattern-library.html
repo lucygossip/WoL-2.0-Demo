@@ -23,12 +23,13 @@
                             <li class="nav-item"><a class="nav-link p-2 main-box" href="#typography" onclick="openTab('typography')">Typography</a></li>
                             <li class="nav-item"><a class="nav-link p-2 main-box" href="#buttons" onclick="openTab('buttons')">Buttons</a></li>
                             <li class="nav-item"><a class="nav-link p-2 main-box" href="#cards" onclick="openTab('cards')">Cards</a></li>
+                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#colors" onclick="openTab('colors')">Colours</a></li>
                         </ul>
                 </navbar>
                     
                     <!-- TEMPLATE
 
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#ID" onclick="openTab('ID')>LINK</a></li>
+                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#ID" onclick="openTab('ID')">LINK</a></li>
 
                     -->
                 
@@ -47,6 +48,8 @@
                 </ul>
                 <p>Please click on the links in the navbar to browse the library.</p>
                 </div>
+                
+                <!-- Typography-->               
                 <div class="main-box p-3 tab" id="typography" style="display:none">
                     <h1 class="text-center">Typography</h1>
                     <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
@@ -84,6 +87,8 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Buttons-->
                 <div class="main-box p-3 tab" id="buttons" style="display:none">
                     <h1 class="text-center">Buttons</h1>
                     <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
@@ -103,6 +108,8 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Cards -->
                 <div class="main-box p-3 tab" id="cards" style="display:none">
                     <h1 class="text-center">Cards</h1>
                     <div class="row">
@@ -130,16 +137,84 @@
                     </div>
                 </div>
                 
+                <!-- Colours -->
+                
+                <div class="main-box p-3 tab" id="colors" style="display:none">
+                    <h1>Colours</h1>
+                    <p>DESCRIPTION HERE</p>
+                <div class="row">
+                    <div class="col-md-6 col-xl-3 p-3 main-box border border-light">
+                        <h2>AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b>FG: </b></td><td>--main-font-color</td>
+                            </tr>
+                            <tr>
+                                <td><b>BG: </b></td><td>--main-background-color</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-xl-3 p-3 main-box border border-light">
+                        <h2 style="color:var(--font-color-light)">AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b style="color:var(--font-color-light)">FG: </b></td><td><span style="color:var(--font-color-light)">--font-color-light</span></td>
+                            </tr>
+                            <tr>
+                                <td><b style="color:var(--font-color-light)">BG: </b></td><td><span style="color:var(--font-color-light)">--main-background-color</span></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <div class="col-md-6 col-xl-3 p-3 dark-box border border-light">
+                        <h2>AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b>FG: </b></td><td>--font-color-light</td>
+                            </tr>
+                            <tr>
+                                <td><b>BG: </b></td><td>--background-color-dark</td>
+                            </tr>
+                        </table>
+                    </div>
+                     <div class="col-md-6 col-xl-3 p-3 dark-box border border-light">
+                        <h2 style="color:var(--main-font-color)">AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b style="color:var(--main-font-color)">FG: </b></td><td><span style="color:var(--main-font-color)">--main-font-color</span></td>
+                            </tr>
+                            <tr>
+                                <td><b style="color:var(--main-font-color)">BG: </b></td><td><span style="color:var(--main-font-color)">--background-color-dark</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-xl-3 p-3 light-box">
+                        <h2>AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b>FG: </b></td><td>--font-color-dark</td>
+                            </tr>
+                            <tr>
+                                <td><b>BG: </b></td><td>--background-color-light</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-xl-3 p-3 main-box">
+                    </div>
+                </div>
+                </div>
+
+                
                 
                 <!-- TEMPLATE
 
                 <div class="main-box p-3 tab" id="ID" style="display:none">
-                <h1>TITLE HERE</h1>
-                <p>DESCRIPTION HERE</p>
+                    <h1>TITLE HERE</h1>
+                    <p>DESCRIPTION HERE</p>
                 <div class="row">
-                <div class="col-xl-4 p-3 main-box"></div>
-                <div class="col-xl-4 p-3 light-box"></div>
-                <div class="col-xl-4 p-3 dark-box"></div>
+                    <div class="col-xl-4 p-3 main-box"></div>
+                    <div class="col-xl-4 p-3 light-box"></div>
+                    <div class="col-xl-4 p-3 dark-box"></div>
                 </div>
                 </div>
 
