@@ -45,8 +45,8 @@ a:hover {
 }
 .light-box {
     background:var(--background-color-light);
-    background-image:url(../img/360_F_426561532_8pXZZAbxSvm3FQ6WwNZxfCFqujFEgt3e.jpeg);
-    background-size:contain;
+    /*background-image:url(../img/360_F_426561532_8pXZZAbxSvm3FQ6WwNZxfCFqujFEgt3e.jpeg);
+    background-size:contain; */
     color:var(--font-color-dark);
 }
 .light-box a {
@@ -54,8 +54,8 @@ a:hover {
 }
 .dark-box {
     background:var(--background-color-dark);
-    background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
-    background-size:contain;
+    /*background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
+    background-size:contain; */
     color:var(--font-color-light);
 }
 .dark-box a {
