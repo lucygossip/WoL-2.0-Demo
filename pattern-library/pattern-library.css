@@ -43,23 +43,32 @@ a:hover {
     color:var(--main-font-color);
     transition:0.3s ease;
 }
-.light-box {
+
+.light-box, .light-box-bg-img {
     background:var(--background-color-light);
     /*background-image:url(../img/360_F_426561532_8pXZZAbxSvm3FQ6WwNZxfCFqujFEgt3e.jpeg);
     background-size:contain; */
     color:var(--font-color-dark);
 }
-.light-box a {
+.light-box a, .light-box-bg-img a {
     color:var(--font-color-dark);
 }
-.dark-box {
+.light-box-bg-img {
+    background-image:url(../img/360_F_426561532_8pXZZAbxSvm3FQ6WwNZxfCFqujFEgt3e.jpeg);
+    background-size:contain;
+}
+.dark-box, .dark-box-bg-img {
     background:var(--background-color-dark);
     /*background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
     background-size:contain; */
     color:var(--font-color-light);
 }
-.dark-box a {
+.dark-box a, .dark-box-bg-img a {
     color:var(--font-color-light);
+}
+.dark-box-bg-img {
+    background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
+    background-size:contain;
 }
 
 /*----- BUTTONS -----*/

@@ -57,33 +57,53 @@
                     <div class="row">
                         <div class="col-xl-4 p-3 main-box">
                             <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Paragraph</p>
-                    <a href="#">Link</a>
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+                            <p>Paragraph</p>
+                            <a href="#">Link</a>
                         </div>
                         <div class="col-xl-4 p-3 light-box">
                             <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Paragraph</p>
-                    <a href="#">Link</a>
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+                            <p>Paragraph</p>
+                            <a href="#">Link</a>
                         </div>
                         <div class="col-xl-4 p-3 dark-box">
                             <h1>Header 1</h1>
-                    <h2>Header 2</h2>
-                    <h3>Header 3</h3>
-                    <h4>Header 4</h4>
-                    <h5>Header 5</h5>
-                    <h6>Header 6</h6>
-                    <p>Paragraph</p>
-                    <a href="#">Link</a>
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+                            <p>Paragraph</p>
+                            <a href="#">Link</a>
+                        </div>
+                        <div class="col-xl-6 p-3 light-box-bg-img">
+                            <h1>Header 1</h1>
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+                            <p>Paragraph</p>
+                            <a href="#">Link</a>
+                        </div>
+                        <div class="col-xl-6 p-3 dark-box-bg-img">
+                            <h1>Header 1</h1>
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+                            <p>Paragraph</p>
+                            <a href="#">Link</a>
                         </div>
                     </div>
                 </div>
@@ -113,9 +133,17 @@
                 <div class="main-box p-3 tab" id="cards" style="display:none">
                     <h1 class="text-center">Cards</h1>
                     <div class="row">
-                        <div class="col-xl-3 main-box d-none d-xl-block"></div>
                         <div class="col-6 col-xl-3 main-box">
                             <div class="card light-box main-box-border">
+                            <img class="card-image-top" src="../img/small-torch.jpg" />
+                            <h6 class="card-header">Card Header</h6>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-6 col-xl-3 main-box">
+                            <div class="card light-box-bg-img main-box-border">
                             <img class="card-image-top" src="../img/small-torch.jpg" />
                             <h6 class="card-header">Card Header</h6>
                             <div class="card-body">
@@ -133,7 +161,15 @@
                             </div>
                         </div>
                         </div>
-                        <div class="col-xl-3 main-box d-none d-xl-block"></div>
+                        <div class="col-6 col-xl-3 main-box">
+                            <div class="card dark-box-bg-img main-box-border">
+                            <img class="card-image-top" src="../img/small-torch.jpg" />
+                            <h6 class="card-header">Card Header</h6>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -195,10 +231,7 @@
                         <div class="col">
                             <h1 class="text-center">Colour Combinations</h1>
                         </div>
-                    </div>
-                    
-                    
-                    
+                    </div>              
                     
                     <!--Colour Combinations -->
                 <div class="row">
@@ -247,6 +280,28 @@
                             </tr>
                         </table>
                     </div>
+                     <div class="col-6 col-xl-3 p-3 dark-box-bg-img border border-light">
+                        <h2>AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b>FG: </b></td><td>--font-color-light</td>
+                            </tr>
+                            <tr>
+                                <td><b>BG: </b></td><td>--background-color-dark + bg image</td>
+                            </tr>
+                        </table>
+                    </div>
+                     <div class="col-6 col-xl-3 p-3 dark-box-bg-img border border-light">
+                        <h2 style="color:var(--main-font-color)">AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b style="color:var(--main-font-color)">FG: </b></td><td><span style="color:var(--main-font-color)">--main-font-color</span></td>
+                            </tr>
+                            <tr>
+                                <td><b style="color:var(--main-font-color)">BG: </b></td><td><span style="color:var(--main-font-color)">--background-color-dark + bg image</span></td>
+                            </tr>
+                        </table>
+                    </div> 
                     <div class="col-6 col-xl-3 p-3 light-box">
                         <h2>AAA</h2>
                         <table>
@@ -258,7 +313,16 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-6 col-xl-3 p-3 main-box">
+                    <div class="col-6 col-xl-3 p-3 main-box light-box-bg-img">
+                        <h2>AAA</h2>
+                        <table>
+                            <tr>
+                                <td><b>FG: </b></td><td>--font-color-dark</td>
+                            </tr>
+                            <tr>
+                                <td><b>BG: </b></td><td>--background-color-light + bg image</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 </div>
