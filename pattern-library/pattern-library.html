@@ -248,6 +248,41 @@
                     
                     <div class="row main-box p-3">
                         <div class="col">
+                            <h1 class="text-center">Text Colours</h1>
+                        </div>
+                    </div>  
+                    
+                    <div class="row">
+                        <div class="col-6 p-3 light-box">
+                            <h3>Black Heading</h3>
+                            <p>Black Text</p>
+                            <hr>
+                            <p>CSS variable name: --font-color-dark</p>
+                        </div>
+                        <div class="col-6 p-3 light-box">
+                            <h3 style="color:var(--font-color-soft-dark)">Soft Black Heading</h3>
+                            <p style="color:var(--font-color-soft-dark)">Soft Black Body</p>
+                            <hr>
+                            <p style="color:var(--font-color-soft-dark)">CSS variable name: --font-color-soft-dark</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-6 p-3 dark-box">
+                            <h3>Cool Gray Heading</h3>
+                            <p>Cool Gray Text</p>
+                            <hr>
+                            <p>CSS variable name: --font-color-cool-gray</p>
+                        </div>
+                        <div class="col-6 p-3 dark-box">
+                            <h3 style="color:var(--font-color-warm-gray)">Warm Gray Heading</h3>
+                            <p style="color:var(--font-color-warm-gray)">Warm Gray Text</p>
+                            <hr>
+                            <p style="color:var(--font-color-warm-gray)">CSS variable name: --font-color-warm-gray</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row main-box p-3">
+                        <div class="col">
                             <h1 class="text-center">Colour Combinations</h1>
                         </div>
                     </div>              
@@ -258,7 +293,7 @@
                         <h2>AAA</h2>
                         <table>
                             <tr>
-                                <td><b>FG: </b></td><td>--main-font-color</td>
+                                <td><b>FG: </b></td><td>--font-color-warm-gray</td>
                             </tr>
                             <tr>
                                 <td><b>BG: </b></td><td>--main-background-color</td>
@@ -266,13 +301,13 @@
                         </table>
                     </div>
                     <div class="col-6 col-xl-3 p-3 main-box border border-light">
-                        <h2 style="color:var(--font-color-light)">AAA</h2>
+                        <h2 style="color:var(--font-color-cool-gray)">AAA</h2>
                         <table>
                             <tr>
-                                <td><b style="color:var(--font-color-light)">FG: </b></td><td><span style="color:var(--font-color-light)">--font-color-light</span></td>
+                                <td><b style="color:var(--font-color-cool-gray)">FG: </b></td><td><span style="color:var(--font-color-cool-gray)">--font-color-cool-gray</span></td>
                             </tr>
                             <tr>
-                                <td><b style="color:var(--font-color-light)">BG: </b></td><td><span style="color:var(--font-color-light)">--main-background-color</span></td>
+                                <td><b style="color:var(--font-color-cool-gray)">BG: </b></td><td><span style="color:var(--font-color-cool-gray)">--main-background-color</span></td>
                             </tr>
                         </table>
                         
@@ -281,7 +316,7 @@
                         <h2>AAA</h2>
                         <table>
                             <tr>
-                                <td><b>FG: </b></td><td>--font-color-light</td>
+                                <td><b>FG: </b></td><td>--font-color-cool-gray</td>
                             </tr>
                             <tr>
                                 <td><b>BG: </b></td><td>--background-color-dark</td>
@@ -289,13 +324,13 @@
                         </table>
                     </div>
                      <div class="col-6 col-xl-3 p-3 dark-box border border-light">
-                        <h2 style="color:var(--main-font-color)">AAA</h2>
+                        <h2 style="color:var(--font-color-warm-gray)">AAA</h2>
                         <table>
                             <tr>
-                                <td><b style="color:var(--main-font-color)">FG: </b></td><td><span style="color:var(--main-font-color)">--main-font-color</span></td>
+                                <td><b style="color:var(--font-color-warm-gray)">FG: </b></td><td><span style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
                             </tr>
                             <tr>
-                                <td><b style="color:var(--main-font-color)">BG: </b></td><td><span style="color:var(--main-font-color)">--background-color-dark</span></td>
+                                <td><b style="color:var(--font-color-warm-gray)">BG: </b></td><td><span style="color:var(--font-color-warm-gray)">--background-color-dark</span></td>
                             </tr>
                         </table>
                     </div>
@@ -311,13 +346,13 @@
                         </table>
                     </div>
                      <div class="col-6 col-xl-3 p-3 dark-box-bg-img border border-light">
-                        <h2 style="color:var(--main-font-color)">AAA</h2>
+                        <h2 style="color:var(--font-color-warm-gray)">AAA</h2>
                         <table>
                             <tr>
-                                <td><b style="color:var(--main-font-color)">FG: </b></td><td><span style="color:var(--main-font-color)">--main-font-color</span></td>
+                                <td><b style="color:var(--font-color-warm-gray)">FG: </b></td><td><span style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
                             </tr>
                             <tr>
-                                <td><b style="color:var(--main-font-color)">BG: </b></td><td><span style="color:var(--main-font-color)">--background-color-dark + bg image</span></td>
+                                <td><b style="color:var(--font-color-warm-gray)">BG: </b></td><td><span style="color:var(--font-color-warm-gray)">--background-color-dark + bg image</span></td>
                             </tr>
                         </table>
                     </div> 

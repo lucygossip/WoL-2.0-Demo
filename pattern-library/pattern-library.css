@@ -3,9 +3,10 @@
     --main-background-color:#222;
     --background-color-light:#ccc;
     --background-color-dark:#3a3a3f;
-    --main-font-color:#aaa8a5;
-    --font-color-light:#ccc;
+    --font-color-cool-gray:#ccc;
+    --font-color-warm-gray:#aaa8a5;
     --font-color-dark:#222;
+    --font-color-soft-dark:#3a3a3f;
     --main-button-color:#3B2E1E;
     --main-button-font-color:#E6DE89;
     --main-hover-font-color:#fff;
@@ -26,11 +27,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration:none;
-    color:var(--font-color-light);
+    color:var(--font-color-cool-gray);
     cursor:pointer;
 }
 a:hover {
-    color:var(--font-color-light);
+    color:var(--font-color-cool-gray);
 }
 .nav-link {
     text-align:left;
@@ -40,7 +41,7 @@ a:hover {
 
 .main-box {
     background:var(--main-background-color);
-    color:var(--main-font-color);
+    color:var(--font-color-warm-gray);
     transition:0.3s ease;
 }
 
@@ -61,10 +62,10 @@ a:hover {
     background:var(--background-color-dark);
     /*background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
     background-size:contain; */
-    color:var(--font-color-light);
+    color:var(--font-color-cool-gray);
 }
 .dark-box a, .dark-box-bg-img a {
-    color:var(--font-color-light);
+    color:var(--font-color-cool-gray);
 }
 .dark-box-bg-img {
     background-image:url(../img/41eb0caf960150d83cb08059f4cadf2a.jpeg);
