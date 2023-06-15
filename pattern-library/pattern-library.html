@@ -1,409 +1,408 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css"> <!-- BOOTSTRAP 5.3 MIN-->
-        <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap 5-->
-    
-    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!-- Cinzel Font -->
-    <link href="pattern-library.css" rel="stylesheet"> <!-- Pattern library CSS-->
-</head>
-<body>
-    
-    <div class="container-fluid">
-    
-        
-        <div class="row">
-            <div class="col-md-auto main-box mb-3 mb-md-0 pt-3">
-                <button class="btn main-box d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar"><h5>Pattern Library</h5></button>
-                <h5 class="d-none d-md-block">Pattern Library</h5>
-                <div class="collapse dont-collapse-sm" id="sidebar">
-                     <navbar class="navbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#about" onclick="openTab('about')">About</a></li>
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#typography" onclick="openTab('typography')">Typography</a></li>
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#buttons" onclick="openTab('buttons')">Buttons</a></li>
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#cards" onclick="openTab('cards')">Cards</a></li>
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#colors" onclick="openTab('colors')">Colours</a></li>
-                        </ul>
-                </navbar>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css"> <!-- BOOTSTRAP 5.3 MIN-->
+            <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap 5-->
+
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'> <!-- Cinzel Font -->
+        <link href="pattern-library.css" rel="stylesheet"> <!-- Pattern library CSS-->
+    </head>
+    <body>
+
+        <div class="container-fluid">
+
+
+            <div class="row">
+
+                <!-- SIDEBAR -->
+                <div class="col-md-auto main-box mb-3 mb-md-0 pt-3">
+                    <button class="btn main-box d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar"><h5>Pattern Library</h5></button>
+                    <h5 class="d-none d-md-block">Pattern Library</h5>
+                    <div class="collapse dont-collapse-sm" id="sidebar">
+                         <navbar class="navbar">
+                            <ul class="navbar-nav">
+                                <h6 class="border-top border-bottom border-light py-2">Guidelines</h6>
+                                <li class="nav-item"><a class="nav-link p-2 main-box" href="#about" onclick="openTab('about')">About</a></li>
+                                <li class="nav-item"><a class="nav-link p-2 main-box" href="#typography" onclick="openTab('typography')">Typography</a></li>
+                                <li class="nav-item"><a class="nav-link p-2 main-box" href="#colors" onclick="openTab('colors')">Colours</a></li>
+                                <h6 class="border-top border-bottom border-light py-2">Components</h6>
+                                <li class="nav-item"><a class="nav-link p-2 main-box" href="#buttons" onclick="openTab('buttons')">Buttons</a></li>
+                                <li class="nav-item"><a class="nav-link p-2 main-box" href="#cards" onclick="openTab('cards')">Cards</a></li>
+                            </ul>
+                    </navbar>
+
+                        <!-- TEMPLATE
+
+                                <li class="nav-item"><a class="nav-link p-2 main-box" href="#ID" onclick="openTab('ID')">LINK</a></li>
+
+                        -->
+
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT -->
+                <div class="col">
+
+                    <!-- About -->
+                    <div class="p-3 tab" id="about">
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                <h1 class="text-center">Pattern Library</h1>
+                        <p>This is the pattern library for <b>Project Valenheim.</b> Here, you will find the preset styles for the project.</p>
+                    <p>This project uses:</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap 5.3</li>
+                    </ul>
+                    <p>Please click on the links in the navbar to browse the library.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typography-->               
+                    <div class="p-3 tab" id="typography" style="display:none">
+
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                 <h1 class="text-center">Typography</h1>
+                        <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
+                    <p>The font colours are styled according to different box styles - main, light and dark.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 p-3 main-box">
+                                <h1>Header 1</h1>
+                                <h2>Header 2</h2>
+                                <h3>Header 3</h3>
+                                <h4>Header 4</h4>
+                                <h5>Header 5</h5>
+                                <h6>Header 6</h6>
+                                <p>Paragraph</p>
+                                <a href="#">Link</a>
+                            </div>
+                            <div class="col-xl-4 p-3 light-box">
+                                <h1>Header 1</h1>
+                                <h2>Header 2</h2>
+                                <h3>Header 3</h3>
+                                <h4>Header 4</h4>
+                                <h5>Header 5</h5>
+                                <h6>Header 6</h6>
+                                <p>Paragraph</p>
+                                <a href="#">Link</a>
+                            </div>
+                            <div class="col-xl-4 p-3 dark-box">
+                                <h1>Header 1</h1>
+                                <h2>Header 2</h2>
+                                <h3>Header 3</h3>
+                                <h4>Header 4</h4>
+                                <h5>Header 5</h5>
+                                <h6>Header 6</h6>
+                                <p>Paragraph</p>
+                                <a href="#">Link</a>
+                            </div>
+                            <div class="col-xl-6 p-3 light-box-bg-img">
+                                <h1>Header 1</h1>
+                                <h2>Header 2</h2>
+                                <h3>Header 3</h3>
+                                <h4>Header 4</h4>
+                                <h5>Header 5</h5>
+                                <h6>Header 6</h6>
+                                <p>Paragraph</p>
+                                <a href="#">Link</a>
+                            </div>
+                            <div class="col-xl-6 p-3 dark-box-bg-img">
+                                <h1>Header 1</h1>
+                                <h2>Header 2</h2>
+                                <h3>Header 3</h3>
+                                <h4>Header 4</h4>
+                                <h5>Header 5</h5>
+                                <h6>Header 6</h6>
+                                <p>Paragraph</p>
+                                <a href="#">Link</a>
+                            </div>
+                        </div>
+                    </div>
                     
+                    <!-- Colours -->             
+                    <div class="p-3 tab" id="colors" style="display:none">
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                <h1 class="text-center">Colours</h1>
+                            </div>
+                        </div>
+
+                        <!-- Colour Circles -->
+                        <div class="row main-box mb-5">
+
+                            <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
+                                <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
+                                    <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--font-color-warm-gray)"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-2 p-3">
+                                <h6>Warm Gray</h6>
+                                <p>#aaa8a5<br>
+                                    <span class="monospace">--font-color-warm-gray</span></p>
+                            </div>
+                            <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
+                                <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
+                                    <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--font-color-light)"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-2 p-3">
+                                <h6>Cool Gray</h6>
+                                <p>#ccc<br>
+                                    <span class="monospace">--font-color-cool-gray</span></p>
+                            </div>
+                            <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
+                                <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
+                                    <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--background-color-dark)"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-2 p-3">
+                                <h6>Soft Black</h6>
+                                <p>#3a3a3f<br>
+                                    <span class="monospace">--background-color-dark</span></p>
+                            </div>
+                            <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
+                                <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
+                                    <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--main-background-color)"></div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-2 p-3">
+                                <h6>Black</h6>
+                                <p>#222<br>
+                                    <span class="monospace">--main-background-color</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Text Colours -->
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                <h1 class="text-center">Text Colours</h1>
+                            </div>
+                        </div>               
+                        <div class="row">
+                            <div class="col-6 p-3 light-box">
+                                <h3>Black Heading</h3>
+                                <p>Black Text</p>
+                                <hr>
+                                <p>CSS variable name: <span class="monospace">--font-color-dark</span></p>
+                            </div>
+                            <div class="col-6 p-3 light-box">
+                                <h3 style="color:var(--font-color-soft-dark)">Soft Black Heading</h3>
+                                <p style="color:var(--font-color-soft-dark)">Soft Black Body</p>
+                                <hr>
+                                <p style="color:var(--font-color-soft-dark)">CSS variable name: <span class="monospace">--font-color-soft-dark</span></p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-6 p-3 dark-box">
+                                <h3>Cool Gray Heading</h3>
+                                <p>Cool Gray Text</p>
+                                <hr>
+                                <p>CSS variable name: <span class="monospace">--font-color-cool-gray</span></p>
+                            </div>
+                            <div class="col-6 p-3 dark-box">
+                                <h3 style="color:var(--font-color-warm-gray)">Warm Gray Heading</h3>
+                                <p style="color:var(--font-color-warm-gray)">Warm Gray Text</p>
+                                <hr>
+                                <p style="color:var(--font-color-warm-gray)">CSS variable name: <span class="monospace">--font-color-warm-gray</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Colour Combinations -->
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                <h1 class="text-center">Colour Combinations</h1>
+                                <p>These colour combinations are set out according to <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">WCAG 2.0</a> colour contrast guidelines. These fonts pass either AAA, AA or AA Large conformance levels of contrast.</p>
+                            </div>
+                        </div>              
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-4 p-3 main-box border border-light">
+                                <h2 style="color:var(--font-color-warm-gray)">AA</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--font-color-warm-gray)">FG: </b></td><td><span style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--font-color-warm-gray)">BG: </b></td><td><span style="color:var(--font-color-warm-gray">--main-background-color</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 p-3 main-box border border-light">
+                                <h2 style="color:var(--font-color-cool-gray)">AAA</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--font-color-cool-gray)">FG: </b></td><td><span style="color:var(--font-color-cool-gray)">--font-color-cool-gray</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--font-color-cool-gray)">BG: </b></td><td><span style="color:var(--font-color-cool-gray)">--main-background-color</span></td>
+                                    </tr>
+                                </table>               
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 p-3 dark-box border border-light">
+                                <h2>AAA</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-3"><b>FG: </b></td><td>--font-color-cool-gray</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><b>BG: </b></td><td>--background-color-dark</td>
+                                    </tr>
+                                </table>
+                            </div>
+                             <div class="col-12 col-md-6 col-xl-4 p-3 dark-box border border-light">
+                                <h2 style="color:var(--font-color-warm-gray)">AA</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--font-color-warm-gray)">FG: </b></td><td><span style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--font-color-warm-gray)">BG: </b></td><td><span style="color:var(--font-color-warm-gray)">--background-color-dark</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                             <div class="col-12 col-md-6 col-xl-4 p-3 dark-box border border-light">
+                                <h2 class="font-xl" style="color:var(--font-color-warm-gray)">AA Large</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-1"><b class="font-lg" style="color:var(--font-color-warm-gray)">FG: </b></td><td><span class="font-lg" style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-1"><b class="font-lg" style="color:var(--font-color-warm-gray)">BG: </b></td><td><span class="font-lg" style="color:var(--font-color-warm-gray)">--background-color-dark + bg image</span></td>
+                                    </tr>
+                                </table>
+                            </div> 
+                            <div class="col-12 col-md-6 col-xl-4 p-3 light-box">
+                                <h2>AAA</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-3"><b>FG: </b></td><td>--font-color-dark</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><b>BG: </b></td><td>--background-color-light</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 p-3 main-box">
+                                <h2 class="font-xl">AA Large</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-1"><b class="font-lg">FG: </b></td><td><span class="font-lg">--font-color-warm-gray</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-1"><b class="font-lg">BG: </b></td><td><span class="font-lg">--background-color-main</span></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                    </div>
+                    </div>
+
+                    <!-- Buttons-->
+                    <div class="p-3 tab" id="buttons" style="display:none">
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                <h1 class="text-center">Buttons</h1>
+                                <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-4 p-3 main-box">
+                                <button class="btn light-box">Button - Light Box</button>
+                        <input class="btn light-box" type="button" value="Button Input - Light Box">
+                            </div>
+                            <div class="col-xl-4 p-3 light-box">
+                                <button class="btn dark-box">Button - Dark Box</button>
+
+                            <input class="btn dark-box" type="button" value="Button Input - Dark Box">
+                            </div>
+                            <div class="col-xl-4 p-3 dark-box">
+                                <button class="btn main-box">Button - Main Box</button>
+                         <input class="btn main-box" type="button" value="Button Input - Main Box">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="p-3 tab" id="cards" style="display:none">
+
+                        <div class="row main-box p-3">
+                            <div class="col">
+                                <h1 class="text-center">Cards</h1>
+                            </div>
+                        </div>             
+                        <div class="row main-box p-3">
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="card light-box main-box-border">
+                                <img class="card-image-top" src="../img/small-torch.jpg" />
+                                <h6 class="card-header">Card Header</h6>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="card light-box-bg-img main-box-border">
+                                <img class="card-image-top" src="../img/small-torch.jpg" />
+                                <h6 class="card-header">Card Header</h6>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="card dark-box main-box-border">
+                                <img class="card-image-top" src="../img/small-torch.jpg" />
+                                <h6 class="card-header">Card Header</h6>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="card dark-box-bg-img main-box-border">
+                                <img class="card-image-top" src="../img/small-torch.jpg" />
+                                <h6 class="card-header">Card Header</h6>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <!-- TEMPLATE
 
-                            <li class="nav-item"><a class="nav-link p-2 main-box" href="#ID" onclick="openTab('ID')">LINK</a></li>
+                    <div class="main-box p-3 tab" id="ID" style="display:none">
+                        <h1>TITLE HERE</h1>
+                        <p>DESCRIPTION HERE</p>
+                    <div class="row">
+                        <div class="col-xl-4 p-3 main-box"></div>
+                        <div class="col-xl-4 p-3 light-box"></div>
+                        <div class="col-xl-4 p-3 dark-box"></div>
+                    </div>
+                    </div>
 
                     -->
-                
+
+
                 </div>
+
             </div>
-            
-            <div class="col">
-                <div class="p-3 tab" id="about">
-                    <div class="row main-box p-3">
-                        <div class="col">
-                            <h1 class="text-center">Pattern Library</h1>
-                    <p>This is the pattern library for <b>Project Valenheim.</b> Here, you will find the preset styles for the project.</p>
-                <p>This project uses:</p>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootstrap 5.3</li>
-                </ul>
-                <p>Please click on the links in the navbar to browse the library.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Typography-->               
-                <div class="p-3 tab" id="typography" style="display:none">
-                    
-                    <div class="row main-box p-3">
-                        <div class="col">
-                             <h1 class="text-center">Typography</h1>
-                    <p>All headers h1 - h6 use the Cinzel font. Everything else is set to Calibri.</p>
-                <p>The font colours are styled according to different box styles - main, light and dark.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-4 p-3 main-box">
-                            <h1>Header 1</h1>
-                            <h2>Header 2</h2>
-                            <h3>Header 3</h3>
-                            <h4>Header 4</h4>
-                            <h5>Header 5</h5>
-                            <h6>Header 6</h6>
-                            <p>Paragraph</p>
-                            <a href="#">Link</a>
-                        </div>
-                        <div class="col-xl-4 p-3 light-box">
-                            <h1>Header 1</h1>
-                            <h2>Header 2</h2>
-                            <h3>Header 3</h3>
-                            <h4>Header 4</h4>
-                            <h5>Header 5</h5>
-                            <h6>Header 6</h6>
-                            <p>Paragraph</p>
-                            <a href="#">Link</a>
-                        </div>
-                        <div class="col-xl-4 p-3 dark-box">
-                            <h1>Header 1</h1>
-                            <h2>Header 2</h2>
-                            <h3>Header 3</h3>
-                            <h4>Header 4</h4>
-                            <h5>Header 5</h5>
-                            <h6>Header 6</h6>
-                            <p>Paragraph</p>
-                            <a href="#">Link</a>
-                        </div>
-                        <div class="col-xl-6 p-3 light-box-bg-img">
-                            <h1>Header 1</h1>
-                            <h2>Header 2</h2>
-                            <h3>Header 3</h3>
-                            <h4>Header 4</h4>
-                            <h5>Header 5</h5>
-                            <h6>Header 6</h6>
-                            <p>Paragraph</p>
-                            <a href="#">Link</a>
-                        </div>
-                        <div class="col-xl-6 p-3 dark-box-bg-img">
-                            <h1>Header 1</h1>
-                            <h2>Header 2</h2>
-                            <h3>Header 3</h3>
-                            <h4>Header 4</h4>
-                            <h5>Header 5</h5>
-                            <h6>Header 6</h6>
-                            <p>Paragraph</p>
-                            <a href="#">Link</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Buttons-->
-                <div class="p-3 tab" id="buttons" style="display:none">
-                    <div class="row main-box p-3">
-                        <div class="col">
-                            <h1 class="text-center">Buttons</h1>
-                            <p>These styles are for buttons and inputs with the button type. The buttons change colour and font colour upon hover.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-xl-4 p-3 main-box">
-                            <button class="btn light-box">Button - Light Box</button>
-                    <input class="btn light-box" type="button" value="Button Input - Light Box">
-                        </div>
-                        <div class="col-xl-4 p-3 light-box">
-                            <button class="btn dark-box">Button - Dark Box</button>
-
-                        <input class="btn dark-box" type="button" value="Button Input - Dark Box">
-                        </div>
-                        <div class="col-xl-4 p-3 dark-box">
-                            <button class="btn main-box">Button - Main Box</button>
-                     <input class="btn main-box" type="button" value="Button Input - Main Box">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Cards -->
-                <div class="p-3 tab" id="cards" style="display:none">
-                    
-                    <div class="row main-box p-3">
-                        <div class="col">
-                            <h1 class="text-center">Cards</h1>
-                        </div>
-                    </div>             
-                    <div class="row main-box p-3">
-                        <div class="col-6 col-xl-3">
-                            <div class="card light-box main-box-border">
-                            <img class="card-image-top" src="../img/small-torch.jpg" />
-                            <h6 class="card-header">Card Header</h6>
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-6 col-xl-3">
-                            <div class="card light-box-bg-img main-box-border">
-                            <img class="card-image-top" src="../img/small-torch.jpg" />
-                            <h6 class="card-header">Card Header</h6>
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
-                            </div>
-                        </div>
-                        
-                        </div>
-                        <div class="col-6 col-xl-3">
-                            <div class="card dark-box main-box-border">
-                            <img class="card-image-top" src="../img/small-torch.jpg" />
-                            <h6 class="card-header">Card Header</h6>
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-6 col-xl-3">
-                            <div class="card dark-box-bg-img main-box-border">
-                            <img class="card-image-top" src="../img/small-torch.jpg" />
-                            <h6 class="card-header">Card Header</h6>
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar elit eu turpis sagittis consequat.</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Colours -->
-                
-                <div class="p-3 tab" id="colors" style="display:none">
-                    <div class="row main-box p-3">
-                        <div class="col">
-                            <h1 class="text-center">Colours</h1>
-                        </div>
-                    </div>
-                    
-                    <!--Colours -->
-                    <div class="row main-box mb-5">
-                        
-                        <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
-                            <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
-                                <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--main-font-color)"></div>
-                            </div>
-                        </div>
-                        <div class="col-3 col-lg-2 p-3">
-                            <h6>Warm Gray</h6>
-                            <p>#aaa8a5<br>
-                                --main-font-color</p>
-                        </div>
-                        <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
-                            <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
-                                <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--font-color-light)"></div>
-                            </div>
-                        </div>
-                        <div class="col-3 col-lg-2 p-3">
-                            <h6>Cool Gray</h6>
-                            <p>#ccc<br>
-                                --font-color-light</p>
-                        </div>
-                        <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
-                            <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
-                                <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--background-color-dark)"></div>
-                            </div>
-                        </div>
-                        <div class="col-3 col-lg-2 p-3">
-                            <h6>Soft Black</h6>
-                            <p>#3a3a3f<br>
-                                --background-color-dark</p>
-                        </div>
-                        <div class="col-3 col-lg-2 col-xl-1 p-3 text-center">
-                            <div class="bg-light rounded-circle ratio ratio-1x1 border border-5 border-dark-subtle">
-                                <div class="rounded-circle ratio ratio-1x1 border border-2 border-dark" style="background-color:var(--main-background-color)"></div>
-                            </div>
-                        </div>
-                        <div class="col-3 col-lg-2 p-3">
-                            <h6>Black</h6>
-                            <p>#222<br>
-                                --main-background-color</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row main-box p-3">
-                        <div class="col">
-                            <h1 class="text-center">Text Colours</h1>
-                        </div>
-                    </div>  
-                    
-                    <div class="row">
-                        <div class="col-6 p-3 light-box">
-                            <h3>Black Heading</h3>
-                            <p>Black Text</p>
-                            <hr>
-                            <p>CSS variable name: --font-color-dark</p>
-                        </div>
-                        <div class="col-6 p-3 light-box">
-                            <h3 style="color:var(--font-color-soft-dark)">Soft Black Heading</h3>
-                            <p style="color:var(--font-color-soft-dark)">Soft Black Body</p>
-                            <hr>
-                            <p style="color:var(--font-color-soft-dark)">CSS variable name: --font-color-soft-dark</p>
-                        </div>
-                    </div>
-                    <div class="row mb-5">
-                        <div class="col-6 p-3 dark-box">
-                            <h3>Cool Gray Heading</h3>
-                            <p>Cool Gray Text</p>
-                            <hr>
-                            <p>CSS variable name: --font-color-cool-gray</p>
-                        </div>
-                        <div class="col-6 p-3 dark-box">
-                            <h3 style="color:var(--font-color-warm-gray)">Warm Gray Heading</h3>
-                            <p style="color:var(--font-color-warm-gray)">Warm Gray Text</p>
-                            <hr>
-                            <p style="color:var(--font-color-warm-gray)">CSS variable name: --font-color-warm-gray</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row main-box p-3">
-                        <div class="col">
-                            <h1 class="text-center">Colour Combinations</h1>
-                        </div>
-                    </div>              
-                    
-                    <!--Colour Combinations -->
-                <div class="row">
-                    <div class="col-6 col-xl-3 p-3 main-box border border-light">
-                        <h2>AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b>FG: </b></td><td>--font-color-warm-gray</td>
-                            </tr>
-                            <tr>
-                                <td><b>BG: </b></td><td>--main-background-color</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-6 col-xl-3 p-3 main-box border border-light">
-                        <h2 style="color:var(--font-color-cool-gray)">AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b style="color:var(--font-color-cool-gray)">FG: </b></td><td><span style="color:var(--font-color-cool-gray)">--font-color-cool-gray</span></td>
-                            </tr>
-                            <tr>
-                                <td><b style="color:var(--font-color-cool-gray)">BG: </b></td><td><span style="color:var(--font-color-cool-gray)">--main-background-color</span></td>
-                            </tr>
-                        </table>
-                        
-                    </div>
-                    <div class="col-6 col-xl-3 p-3 dark-box border border-light">
-                        <h2>AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b>FG: </b></td><td>--font-color-cool-gray</td>
-                            </tr>
-                            <tr>
-                                <td><b>BG: </b></td><td>--background-color-dark</td>
-                            </tr>
-                        </table>
-                    </div>
-                     <div class="col-6 col-xl-3 p-3 dark-box border border-light">
-                        <h2 style="color:var(--font-color-warm-gray)">AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b style="color:var(--font-color-warm-gray)">FG: </b></td><td><span style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
-                            </tr>
-                            <tr>
-                                <td><b style="color:var(--font-color-warm-gray)">BG: </b></td><td><span style="color:var(--font-color-warm-gray)">--background-color-dark</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                     <div class="col-6 col-xl-3 p-3 dark-box-bg-img border border-light">
-                        <h2>AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b>FG: </b></td><td>--font-color-light</td>
-                            </tr>
-                            <tr>
-                                <td><b>BG: </b></td><td>--background-color-dark + bg image</td>
-                            </tr>
-                        </table>
-                    </div>
-                     <div class="col-6 col-xl-3 p-3 dark-box-bg-img border border-light">
-                        <h2 style="color:var(--font-color-warm-gray)">AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b style="color:var(--font-color-warm-gray)">FG: </b></td><td><span style="color:var(--font-color-warm-gray)">--font-color-warm-gray</span></td>
-                            </tr>
-                            <tr>
-                                <td><b style="color:var(--font-color-warm-gray)">BG: </b></td><td><span style="color:var(--font-color-warm-gray)">--background-color-dark + bg image</span></td>
-                            </tr>
-                        </table>
-                    </div> 
-                    <div class="col-6 col-xl-3 p-3 light-box">
-                        <h2>AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b>FG: </b></td><td>--font-color-dark</td>
-                            </tr>
-                            <tr>
-                                <td><b>BG: </b></td><td>--background-color-light</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-6 col-xl-3 p-3 main-box light-box-bg-img">
-                        <h2>AAA</h2>
-                        <table>
-                            <tr>
-                                <td><b>FG: </b></td><td>--font-color-dark</td>
-                            </tr>
-                            <tr>
-                                <td><b>BG: </b></td><td>--background-color-light + bg image</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                </div>
-
-                
-                
-                <!-- TEMPLATE
-
-                <div class="main-box p-3 tab" id="ID" style="display:none">
-                    <h1>TITLE HERE</h1>
-                    <p>DESCRIPTION HERE</p>
-                <div class="row">
-                    <div class="col-xl-4 p-3 main-box"></div>
-                    <div class="col-xl-4 p-3 light-box"></div>
-                    <div class="col-xl-4 p-3 dark-box"></div>
-                </div>
-                </div>
-
-                -->
-                
-                
-            </div>
-            
         </div>
-    </div>
-    
-    
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap 5 JS bundle -->
-    <script src="../js/script.js"></script>
-</body>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap 5 JS bundle -->
+        <script src="../js/script.js"></script>
+    </body>
+</html>

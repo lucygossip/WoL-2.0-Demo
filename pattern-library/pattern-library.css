@@ -91,6 +91,21 @@ button.main-box:focus, input[type="button"].main-box:focus, button.dark-box:focu
     color:#fff;
 }
 
+/*----- CUSTOM -----*/
+
+.monospace {
+    font-family:monospace;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    padding:3px;
+}
+.font-lg {
+    font-size:18pt;
+}
+.font-xl {
+    font-size:24pt;
+}
+
 /*----- SIDEBAR NO COLLAPSE -----*/
 
 @media (min-width: 768px) {
