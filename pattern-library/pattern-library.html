@@ -205,7 +205,7 @@
                                 <h3>Cool Gray Heading</h3>
                                 <p>Cool Gray Text</p>
                                 <hr>
-                                <p>CSS variable name: <span class="monospace">--cool-gray</span></p>
+                                <p>CSS variable name: <span class="monospace">--color-cool-gray</span></p>
                             </div>
                             <div class="col-6 p-3 dark-box">
                                 <h3 style="color:var(--color-warm-gray)">Warm Gray Heading</h3>
@@ -224,6 +224,17 @@
                         </div>              
                         <div class="row">
                             <div class="col-12 col-md-6 col-xl-4 p-3 main-box border border-light">
+                                <h2 style="color:var(--color-cool-gray)">AAA</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--color-cool-gray)">FG: </b></td><td><span style="color:var(--color-cool-gray)">--color-cool-gray</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><b style="color:var(--color-cool-gray)">BG: </b></td><td><span style="color:var(--color-cool-gray)">--color-black</span></td>
+                                    </tr>
+                                </table>               
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 p-3 main-box border border-light"> 
                                 <h2 style="color:var(--color-warm-gray)">AA</h2>
                                 <table>
                                     <tr>
@@ -235,15 +246,16 @@
                                 </table>
                             </div>
                             <div class="col-12 col-md-6 col-xl-4 p-3 main-box border border-light">
-                                <h2 style="color:var(--color-cool-gray)">AAA</h2>
+                                <h2 class="font-xl">AA Large</h2>
                                 <table>
                                     <tr>
-                                        <td class="p-3"><b style="color:var(--color-cool-gray)">FG: </b></td><td><span style="color:var(--color-cool-gray)">--color-cool-gray</span></td>
+                                        <td class="p-1"><b class="font-lg">FG: </b></td><td><span class="font-lg">--color-warm-gray</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="p-3"><b style="color:var(--color-cool-gray)">BG: </b></td><td><span style="color:var(--color-cool-gray)">--color-black</span></td>
+                                        <td class="p-1"><b class="font-lg">BG: </b></td><td><span class="font-lg">--color-black</span></td>
                                     </tr>
-                                </table>               
+                                </table>
+
                             </div>
                             <div class="col-12 col-md-6 col-xl-4 p-3 dark-box border border-light">
                                 <h2>AAA</h2>
@@ -278,7 +290,7 @@
                                     </tr>
                                 </table>
                             </div> 
-                            <div class="col-12 col-md-6 col-xl-4 p-3 light-box">
+                            <div class="col-12 col-md-6 col-xl-4 p-3 light-box border border-light">
                                 <h2>AAA</h2>
                                 <table>
                                     <tr>
@@ -289,18 +301,31 @@
                                     </tr>
                                 </table>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-4 p-3 main-box">
-                                <h2 class="font-xl">AA Large</h2>
+                            <div class="col-12 col-md-6 col-xl-4 p-3 light-box border border-light">
+                                <h2 style="color:var(--color-soft-black)">AA</h2>
                                 <table>
                                     <tr>
-                                        <td class="p-1"><b class="font-lg">FG: </b></td><td><span class="font-lg">--color-warm-gray</span></td>
+                                        <td class="p-1"><b style="color:var(--color-soft-black)">FG: </b></td><td><span style="color:var(--color-soft-black)">--color-soft-black</span></td>
                                     </tr>
                                     <tr>
-                                        <td class="p-1"><b class="font-lg">BG: </b></td><td><span class="font-lg">--color-black</span></td>
+                                        <td class="p-1"><b style="color:var(--color-soft-black)">BG: </b></td><td><span style="color:var(--color-soft-black)">--color-soft-white</span></td>
                                     </tr>
                                 </table>
 
                             </div>
+                            <div class="col-12 col-md-6 col-xl-4 p-3 light-box border border-light">
+                                <h2 class="font-xl" style="color:var(--color-soft-black)">AA Large</h2>
+                                <table>
+                                    <tr>
+                                        <td class="p-1"><b class="font-lg" style="color:var(--color-soft-black)">FG: </b></td><td><span class="font-lg" style="color:var(--color-soft-black)">--color-soft-black</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-1"><b class="font-lg" style="color:var(--color-soft-black)">BG: </b></td><td><span class="font-lg" style="color:var(--color-soft-black)">--color-soft-white</span></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            
                     </div>
                     </div>
 
