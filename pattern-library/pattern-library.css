@@ -1,7 +1,7 @@
 /*----- ROOT VARIABLES -----*/
 :root {
     --color-white:#fff;
-    --color-black:#222;
+    --color-black:#111;
     --color-soft-white:#ccc;
     --color-soft-black:#3a3a3f;
     --color-cool-gray:#ccc;
@@ -94,7 +94,7 @@ button.main-box:focus, input[type="button"].main-box:focus, button.dark-box:focu
 
 .monospace {
     font-family:monospace;
-    background:rgba(0,0,0,0.5);
+    background:#111;
     color:#fff;
     padding:3px;
 }
