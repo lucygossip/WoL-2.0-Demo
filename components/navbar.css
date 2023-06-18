@@ -1,0 +1,10 @@
+.main-navbar {
+    margin-bottom:30px;
+}
+.main-dropdown-link, a.nav-link {
+    color:var(--color-warm-gray);
+}
+/*----- BOOTSTRAP OVERRIDES -----*/
+.navbar-nav .nav-link.show {
+    color:#fff;
+}

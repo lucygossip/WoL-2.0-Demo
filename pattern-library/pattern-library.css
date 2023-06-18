@@ -34,6 +34,7 @@ a:hover {
 }
 .nav-link {
     text-align:left;
+    color:var(--color-warm-gray);
 }
 
 /*----- BOX STYLES -----*/
